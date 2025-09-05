@@ -106,6 +106,22 @@
 
         </div>
 
+        <!-- Search button -->
+        <section class="flex justify-center items-center mt-8">
+            <div class="join">
+                <div>
+                    <label class="input validator join-item">
+                        <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+                    </label>
+                </div>
+                <button id="btn-search" class="btn btn-primary join-item">Search</button>
+            </div>
+        </section>
+
+        <section id="spinner" class="flex justify-center items-center py-10 hidden">
+            <span class="loading loading-bars loading-xl"></span>
+        </section>
+
         <!-- Word Section start here -->
         <section id="word-container" class="bg-gray-100 p-10 my-5 w-11/12 mx-auto grid grid-cols-3 gap-5">
 
@@ -117,10 +133,11 @@
         </section>
         <!-- Open the modal using ID.showModal() method -->
         <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
-        <dialog id="my_modal_1" class="modal">
+        <dialog id="word_modal" class="modal">
             <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div id="details-container" class="space-y-4">
+
+                </div>
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
