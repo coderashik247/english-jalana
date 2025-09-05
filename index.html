@@ -99,16 +99,40 @@
     </section>
 
     <!-- Lesson Section star here -->
-    <section>
-        <h2 class="text-4xl text-center  md:text-5xl font-bold mb-5"><span
-                class="text-blue-400">Let's</span> Learn Vocabularies</h2>
-        <div id="lessons-container" class="flex justify-center items-center gap-5">
+    <section class="mt-5">
+        <h2 class="text-4xl text-center  md:text-5xl font-bold mb-5"><span class="text-blue-400">Let's</span> Learn
+            Vocabularies</h2>
+        <div id="lessons-container" class="flex justify-center items-center gap-5 flex-wrap">
 
-        </div>                
+        </div>
+
+        <!-- Word Section start here -->
+        <section id="word-container" class="bg-gray-100 p-10 my-5 w-11/12 mx-auto grid grid-cols-3 gap-5">
+
+            <div class="text-center col-span-3 space-y-3">
+
+                <p class="font-bangla font-medium text-[#79716b]">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <h2 class="font-bangla text-3xl font-semibold">একটি Lesson Select করুন।</h2>
+            </div>
+        </section>
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </section>
 
     <!-- JS file -->
-    <script src="./script/index.js"></script> 
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
